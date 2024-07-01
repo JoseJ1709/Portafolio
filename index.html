@@ -92,11 +92,57 @@
 
         <div class="main-content">
             
-            <article class="about">
+        <!--
+        - #NAVBAR
+        -->
 
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <button class="navbar-link"  data-nav-link>Sobre Mi</button>
+                    </li>
+                    
+                    <li class="navbar-item">
+                        <button class="navbar-link"  data-nav-link>Resumen</button>
+                    </li>
+
+                    <li class="navbar-item">
+                        <button class="navbar-link"  data-nav-link>Portafolio</button>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <article class="about active" data-page="sobre mi">
+                <header>
+                    <h2 class="h2 article-title">Sobre Mi</h2>
+                </header>
+            </article>
+
+            <article class="resume" data-page="resumen">
+                <header>
+                    <h2 class="h2 article-title">Resumen</h2>
+                </header>
             </article>
         
+            <article class="portfolio" data-page="portafolio">
+                <header>
+                    <h2 class="h2 article-title">Portafolio</h2>
+                </header>
+            </article>
         </div>
     </main>
+    
+    <!--
+    - custom js link
+    -->
+    <script src="./assets/index.js"></script>
     </body>
+    
+    <!--
+    - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </html>

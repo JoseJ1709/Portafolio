@@ -97,8 +97,31 @@ body { background: var(--smoky-black);}
   z-index: 1; 
 }
 
+article { display: none; }
+
+article.active { display: block;}
+
 li { list-style: none; }
 a {text-decoration: none;}
+
+
+.h2,
+.h3,
+.h4,
+.h5 {
+  color: var(--white-2);
+  text-transform: capitalize;
+}
+
+.h2 { font-size: var(--fs-1); }
+
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
 /*-----------------------------------*\
   #MAIN
 \*-----------------------------------*/
@@ -165,7 +188,6 @@ main {
 
 .contact-item {
   margin-bottom: 20px;
-  min-width: 100%;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -188,9 +210,55 @@ main {
 \*-----------------------------------*/
 
 
-.main-content .about{
+.main-content{
+  position: relative;
+}
+
+.main-content {
   margin-top: 60px;
   height: 1300px;
   width: 800px;
   margin-left: 30px;
+}
+
+/*-----------------------------------*\
+  #NAVBAR
+\*-----------------------------------*/
+
+.navbar {
+  position: absolute;
+  right: 0;
+  height: 55px;
+  width: 350px;
+  background: hsla(240, 1%, 17%, 0.75);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--jet);
+  border-radius: 0 12px 0 12px;
+  box-shadow: var(--shadow-2);
+  z-index: 2;
+  display: flex;
+}
+
+.navbar-list{ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-left: 10px;
+}
+.navbar-item{
+  padding-left: 15px;
+}
+.navbar-link{
+  color: var(--light-gray);
+  font-size: var(--fs-3);
+  transition: color var(--transition-1);
+}
+
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+
+.article-title{
+  margin-left: 20px;
 }
