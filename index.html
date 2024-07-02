@@ -22,7 +22,9 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     </head>
     <body>
-    
+        <div class="background-container">
+            <div class="gradient-overlay"></div>
+            <div class="radial-overlay"></div>
     <!--
     - #MAIN
     -->
@@ -52,7 +54,7 @@
                 <ul class="contact-list">
                     <li class="contact-item">
                         <div class="icon-box">
-                            
+                            <ion-icon name="mail-outline" class="mail"></ion-icon>
                         </div>
                         <div class="contact-info">
                             <a href="jaramillojoseandres26@gmail.com" class="contact-link">jarmillojoseandre26@</a>
@@ -60,7 +62,7 @@
                     </li>
                     <li class="contact-item">
                         <div class="icon-box">
-                            
+                            <ion-icon name="call-outline" class="phone"></ion-icon>
                         </div>
                         <div class="contact-info">
                             <a href="tel:+573194887542" class="contact-link">+57 (319) 488 7542</a>
@@ -68,7 +70,7 @@
                     </li>
                     <li class="contact-item">
                         <div class="icon-box">
-                            
+                            <ion-icon name="logo-github" class="github"></ion-icon>
                         </div>
                         <div class="contact-info">
                             <a href="link:github.com/JoseJ1709" class="contact-link">JoseJ1709</a>
@@ -76,7 +78,7 @@
                     </li>
                     <li class="contact-item">
                         <div class="icon-box">
-                            
+                            <ion-icon name="location-outline" class="location"></ion-icon>
                         </div>
                         <div class="contact-info">
                             <address class="contact-link">Bogota, Colombia</address>
@@ -112,12 +114,84 @@
 
                 </ul>
             </nav>
-
+            
+        <!--
+        - #ABOUT
+        -->
+            
             <article class="about active" data-page="sobre mi">
                 <header>
                     <h2 class="h2 article-title">Sobre Mi</h2>
                 </header>
+                <section class="about-text">
+                    <p>
+                        I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
+                        I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                    </p>
+                    <p>
+                        My job is to build your website so that it is functional and user-friendly but at the same time attractive.
+                        Moreover, I
+                        add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
+                        across your
+                        message and identity in the most creative way. I created web design for many famous brand companies.
+                    </p>
+                </section>
+
+                <!--
+                - service
+                -->
+
+                <section class="service">
+                    <h3 class="h3 service-title">Que hago?</h3>
+                    <ul class="service-list">
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img class="web" src="./assets/images/web.png">
+                            </div>
+                            <div class="serive-content-box">
+                                <h4 class="h4 service-item-title">Desarrollo Web</h4>
+                                <p class="service-item-text">
+                                    The most modern and high-quality design made at a professional level.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img class="algor" src="./assets/images/algorithm.png">
+                            </div>
+                            <div class="serive-content-box">
+                                <h4 class="h4 service-item-title">Algoritmos</h4>
+                                <p class="service-item-text">
+                                    The most modern and high-quality design made at a professional level.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img class="mobile" src="./assets/images/mobile.png">
+                            </div>
+                            <div class="serive-content-box">
+                                <h4 class="h4 service-item-title">Aplicaciones Moviles</h4>
+                                <p class="service-item-text">
+                                    The most modern and high-quality design made at a professional level.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="service-item">
+                            <div class="service-icon-box">
+                                <img class="ai" src="./assets/images/ai.png">
+                            </div>
+                            <div class="serive-content-box">
+                                <h4 class="h4 service-item-title">Entranamiento AI</h4>
+                                <p class="service-item-text">
+                                    The most modern and high-quality design made at a professional level.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
             </article>
+
 
             <article class="resume" data-page="resumen">
                 <header>
@@ -132,11 +206,12 @@
             </article>
         </div>
     </main>
-    
+</div>
     <!--
     - custom js link
     -->
     <script src="./assets/index.js"></script>
+    
     </body>
     
     <!--
