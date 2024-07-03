@@ -84,6 +84,7 @@
 \*-----------------------------------*/
 
 html { font-family: var(--ff-poppins);}
+
 body, html {
   margin: 0;
   padding: 0;
@@ -97,7 +98,7 @@ body, html {
   background-color: black;
 }
 .background-container .gradient-overlay {
-  position: absolute;
+  position:fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -393,4 +394,9 @@ ion-icon{
   font-size: var(--fs-5);
   font-weight: var(--fw-3);
   line-height: 1.6;
+}
+.list-tools{
+  display: flex;
+  justify-content: center;
+  gap: 100px;
 }
