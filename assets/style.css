@@ -398,5 +398,11 @@ ion-icon{
 .list-tools{
   display: flex;
   justify-content: center;
+  margin-top: 40px;
   gap: 100px;
+}
+.firebase{
+  margin-top: 5px;
+  width: 70px;
+  height: 85px;
 }
