@@ -1,347 +1,427 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Portafolio Personal</title>
-        <!--
-            - favicon
-        -->
-
-        <!--
-        - custom css link
-        -->
-        <link rel="stylesheet" href="./assets/style.css">
-
-        <!--
-        - google font link
-        -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    </head>
-    <body class="background-container">
-    <div class="gradient-overlay"></div>
-    <!--
-    - #MAIN
-    -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body class="fondo-contenedor">
+    <div class="superposicion-gradiente"></div>
 
     <main>
-    
-    <!--
-      - #SIDEBAR
-    -->
-
-        <aside class="sidebar">
-            <div class="sidebar-info">
-                
-                <div class="avatar-box">
-                    <img class="avatar" src="./assets/images/josejaramillo.jpg">
+        <!-- Barra lateral -->
+        <aside class="barra-lateral">
+            <div class="info-barra-lateral">
+                <div class="caja-avatar">
+                    <img class="avatar" src="./assets/images/josejaramillo.jpg" alt="Jose Jaramillo">
                 </div>
-
-                <div class="info-content">
-                    <h1 class="name" title="Jose Jaramillo">Jose Jaramillo</h1>
-                    <p class="title">Estudiante</p>
-                  </div>
+                <div class="contenido-info">
+                    <h1 class="nombre" title="Jose Jaramillo">Jose Jaramillo</h1>
+                    <p class="titulo">Estudiante</p>
+                </div>
             </div>
-            
-            <div class="separator"></div>
-
-            <div class="sidebar-info_more">
-                <ul class="contact-list">
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="mail-outline" class="mail"></ion-icon>
+            <div class="separador"></div>
+            <div class="info-barra-lateral-adicional">
+                <ul class="lista-contacto">
+                    <li class="item-contacto">
+                        <div class="caja-icono">
+                            <ion-icon name="mail-outline" class="correo"></ion-icon>
                         </div>
-                        <div class="contact-info">
-                            <a href="jaramillojoseandres26@gmail.com" class="contact-link">jarmillojoseandre26@</a>
+                        <div class="info-contacto">
+                            <a href="mailto:jaramillojoseandres26@gmail.com" target="_blank" class="enlace-contacto">jarmillojoseandre26@</a>
                         </div>
                     </li>
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="call-outline" class="phone"></ion-icon>
+                    <li class="item-contacto">
+                        <div class="caja-icono">
+                            <ion-icon name="call-outline" class="telefono"></ion-icon>
                         </div>
-                        <div class="contact-info">
-                            <a href="tel:+573194887542" class="contact-link">+57 (319) 488 7542</a>
+                        <div class="info-contacto">
+                            <a href="tel:+573194887542" target="_blank" class="enlace-contacto">+57 (319) 488 7542</a>
                         </div>
                     </li>
-                    <li class="contact-item">
-                        <div class="icon-box">
+                    <li class="item-contacto">
+                        <div class="caja-icono">
                             <ion-icon name="logo-github" class="github"></ion-icon>
                         </div>
-                        <div class="contact-info">
-                            <a href="link:github.com/JoseJ1709" class="contact-link">JoseJ1709</a>
+                        <div class="info-contacto">
+                            <a href="https://github.com/JoseJ1709" target="_blank" class="enlace-contacto">JoseJ1709</a>
                         </div>
                     </li>
-                    <li class="contact-item">
-                        <div class="icon-box">
-                            <ion-icon name="location-outline" class="location"></ion-icon>
+                    <li class="item-contacto">
+                        <div class="caja-icono">
+                            <ion-icon name="logo-linkedin" class="linkedin"></ion-icon>
                         </div>
-                        <div class="contact-info">
-                            <address class="contact-link">Bogota, Colombia</address>
+                        <div class="info-contacto">
+                            <a href="https://www.linkedin.com/in/jos%C3%A9-andres-jaramillo-543bb0265/" class="enlace-contacto">José Andres Jaramillo</a>
+                        </div>
+                    </li>
+                    <li class="item-contacto">
+                        <div class="caja-icono">
+                            <ion-icon name="document-outline" class="cv"></ion-icon>
+                        </div>
+                        <div class="info-contacto">
+                            <a href="./assets/pdf/Portafolio.pdf" target="_blank" class="enlace-contacto">Portafolio</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </aside>
 
-    <!--
-      - #main-content
-    -->
-
-        <div class="main-content">
-            
-        <!--
-        - #NAVBAR
-        -->
-
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <button class="navbar-link"  data-nav-link>Sobre Mi</button>
+        <!-- Contenido principal -->
+        <div class="contenido-principal">
+            <!-- Barra de navegación -->
+            <nav class="barra-navegacion">
+                <ul class="lista-navegacion">
+                    <li class="item-navegacion">
+                        <button class="enlace-navegacion" data-nav-link>Sobre Mí</button>
                     </li>
-                    
-                    <li class="navbar-item">
-                        <button class="navbar-link"  data-nav-link>Resumen</button>
+                    <li class="item-navegacion">
+                        <button class="enlace-navegacion" data-nav-link>Resumen</button>
                     </li>
-
-                    <li class="navbar-item">
-                        <button class="navbar-link"  data-nav-link>Portafolio</button>
-                    </li>
-
                 </ul>
             </nav>
-            
-        <!--
-        - #ABOUT
-        -->
-            
-            <article class="about " data-page="sobre mi">
+
+            <!-- Sección Sobre Mí -->
+            <article class="sobre-mi activo" data-page="sobre mi">
                 <header>
-                    <h2 class="h2 article-title">Sobre Mi</h2>
+                    <h2 class="h2 titulo-articulo">Sobre Mí</h2>
                 </header>
-                <section class="about-text">
+                <section class="texto-sobre-mi">
                     <p>
-                        I'm Creative Director and UI/UX Designer from Sydney, Australia, working in web development and print media.
-                        I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                        Estudiante de Ingeniería de Sistemas con enfoque en Machine Learning y desarrollo de software. Me apasiona crear soluciones 
+                        eficientes mediante algoritmos y estructuras de datos, desde juegos de lógica hasta compresión de información y automatización de
+                        procesos.
                     </p>
                     <p>
-                        My job is to build your website so that it is functional and user-friendly but at the same time attractive.
-                        Moreover, I
-                        add personal touch to your product and make sure that is eye-catching and easy to use. My aim is to bring
-                        across your
-                        message and identity in the most creative way. I created web design for many famous brand companies.
-                    </p>
+                        Disfruto colaborar en equipo, aportando ideas y asegurando que cada proyecto avance de manera eficiente. Actualmente, colaboro 
+                        como asistente informal en contaduría, donde he manejado datos sensibles y he trabajado en la automatización de procesos, como la 
+                        generación de documentos para devoluciones de IVA.
+                </section>
+                <header>
+                    <h2 class="h2 titulo-articulo">Mis habilidades</h2>
+                </header>
+                <section class="mis-habilidades">
+                    <div class="skill-card">
+                        <div class="skill-tag" style="background-color: #ff7171c4;">Tecnica</div>
+                        <h3 class="skill-name" style="color : #ff7171c4">Machine Learning y Análisis de Datos</h3>
+                        <p class="skill-description"> Aplicación de técnicas de
+                            Machine Learning para el
+                            procesamiento y optimización de
+                            datos en diferentes entornos</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-tag" style="background-color: #FBC105;">Blanda</div>
+                        <h3 class="skill-name" style="color : #FBC105">Persistencia y resolución de
+                            problemas</h3>
+                        <p class="skill-description"> Enfrento desafíos con
+                            determinación, obsesionándome
+                            hasta encontrar la mejor solución
+                            posible.
+                            </p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-tag" style="background-color: #7171ffc4;">Blanda</div>
+                        <h3 class="skill-name" style="color : #7171ffc4">Trabajo en equipo y colaboración</h3>
+                        <p class="skill-description">Me comprometo plenamente con
+                            mis tareas dentro de un equipo,
+                            aportando ideas y asegurando que
+                            cada proyecto avance de manera
+                            eficiente</p>
+                    </div>
                 </section>
 
-                <!--
-                - service
-                -->
-
-                <section class="service">
-                    <h3 class="h3 service-title">Que estoy haciendo?</h3>
-                    <ul class="service-list">
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img class="web" src="./assets/images/web.png">
+                <!-- Servicios -->
+                <section class="servicios">
+                    <h3 class="h3 titulo-servicio">¿Qué estoy haciendo?</h3>
+                    <ul class="lista-servicios">
+                        <li class="item-servicio">
+                            <div class="caja-icono-servicio">
+                                <img class="icono-web" src="./assets/images/curve.png" alt="Desarrollo Web">
                             </div>
-                            <div class="serive-content-box">
-                                <h4 class="h4 service-item-title">Desarrollo Web</h4>
-                                <p class="service-item-text">
-                                    The most modern and high-quality design made at a professional level.
+                            <div class="contenido-servicio">
+                                <h4 class="h4 titulo-item-servicio">Analisis Numerico</h4>
+                                <p class="texto-item-servicio">
+                                    Técnicas de optimización de errores y aproximación de datos, para mejorar la precisión del análisis.
                                 </p>
                             </div>
                         </li>
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img class="algor" src="./assets/images/algorithm.png">
+                        <li class="item-servicio">
+                            <div class="caja-icono-servicio">
+                                <img class="icono-algoritmo" src="./assets/images/algorithm.png" alt="Algoritmos">
                             </div>
-                            <div class="serive-content-box">
-                                <h4 class="h4 service-item-title">Algoritmos</h4>
-                                <p class="service-item-text">
-                                    The most modern and high-quality design made at a professional level.
+                            <div class="contenido-servicio">
+                                <h4 class="h4 titulo-item-servicio">Optimización y Simulación</h4>
+                                <p class="texto-item-servicio">
+                                    Algoritmos de simulación para comunicación, optimizando el flujo
+                                     de datos.
                                 </p>
                             </div>
                         </li>
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img class="mobile" src="./assets/images/mobile.png">
+                        <li class="item-servicio">
+                            <div class="caja-icono-servicio">
+                                <img class="icono-movil" src="./assets/images/terrain.png" alt="Aplicaciones Móviles">
                             </div>
-                            <div class="serive-content-box">
-                                <h4 class="h4 service-item-title">Aplicaciones Moviles</h4>
-                                <p class="service-item-text">
-                                    The most modern and high-quality design made at a professional level.
+                            <div class="contenido-servicio">
+                                <h4 class="h4 titulo-item-servicio">Tegnologias Emergentes</h4>
+                                <p class="texto-item-servicio">
+                                    Uso de drones para modelar cambios en zonas específicas mediante
+                                    análisis de imágenes y superposición de planos.
                                 </p>
                             </div>
                         </li>
-                        <li class="service-item">
-                            <div class="service-icon-box">
-                                <img class="ai" src="./assets/images/ai.png">
+                        <li class="item-servicio">
+                            <div class="caja-icono-servicio">
+                                <img class="icono-ai" src="./assets/images/ai.png" alt="Entrenamiento AI">
                             </div>
-                            <div class="serive-content-box">
-                                <h4 class="h4 service-item-title">Entranamiento AI</h4>
-                                <p class="service-item-text">
-                                    The most modern and high-quality design made at a professional level.
+                            <div class="contenido-servicio">
+                                <h4 class="h4 titulo-item-servicio">Tecnicas de Aprendizaje ML</h4>
+                                <p class="texto-item-servicio">
+                                    Métodos para el análisis de datos y el entrenamiento de modelos
+                                     con TensorFlow y Keras.
                                 </p>
                             </div>
                         </li>
                     </ul>
                 </section>
+
+                <!-- Lenguajes y Herramientas -->
                 <section>
-                    <h3 class="h3 service-title">Lenguajes & Herramientas</h3>
-                    <div class="list-tools">
-                        <img class="algor" src="./assets/images/c++.png">
-                        <img class="algor" src="./assets/images/python.png">
-                        <img class="algor" src="./assets/images/java.png">
-                        <img class="algor" src="./assets/images/kotlin.png">
-                        <img class="algor" src="./assets/images/android-studio.png">
+                    <h3 class="h3 titulo-servicio">Lenguajes & Herramientas</h3>
+                    <div class="lista-herramientas">
+                        <img class="icono-herramienta" src="./assets/images/c++.png" alt="C++">
+                        <img class="icono-herramienta" src="./assets/images/python.png" alt="Python">
+                        <img class="icono-herramienta" src="./assets/images/java.png" alt="Java">
+                        <img class="icono-herramienta" src="./assets/images/kotlin.png" alt="Kotlin">
+                        <img class="icono-herramienta" src="./assets/images/android-studio.png" alt="Android Studio">
                     </div>
-                    <div class="list-tools">
-                        <img class="firebase" src="./assets/images/firebase.png">
-                        <img class="algor" src="./assets/images/jetbrains.png">
-                        <img class="algor" src="./assets/images/github.png">
+                    <div class="lista-herramientas">
+                        <img class="icono-herramienta" src="./assets/images/firebase.png" alt="Firebase">
+                        <img class="icono-herramienta" src="./assets/images/jetbrains.png" alt="JetBrains">
+                        <img class="icono-herramienta" src="./assets/images/github.png" alt="GitHub">
+                        <img class="icono-herramienta-arch" src="./assets/images/arch.png" alt="GitHub">
                     </div>
                 </section>
+
+                <!-- Certificados -->
                 <section>
-                    <h3 class="h3 service-title">Certificados</h3>
+                    <h3 class="h3 titulo-servicio">Certificados</h3>
+                    <div class="grid-container">
+                        <div class="pdf-item">
+                            <embed src="./assets/pdf/hakaton.pdf" type="application/pdf" width="100%" height="200px" />
+                        </div>
+                        <div class="pdf-item">
+                            <embed src="./assets/pdf/r.pdf" type="application/pdf" width="100%" height="200px"/>
+                        </div>
+                        <div class="pdf-item">
+                            <embed src="./assets/pdf/TOEFL.pdf" type="application/pdf" width="100%" height="200px" />
+                        </div>
+                        <div class="pdf-item">
+                            <embed src="./assets/pdf/algebra.pdf" type="application/pdf" width="100%" height="200px" />
+                        </div>
+                        <div class="pdf-item">
+                            <embed src="./assets/pdf/data-science.pdf" type="application/pdf"width="100%" height="200px" />
+                        </div>
+                        <div class="pdf-item">
+                            <embed src="./assets/pdf/linux.pdf" type="application/pdf"width="100%" height="200px"/>
+                        </div>
+                    </div>
                 </section>
             </article>
 
-        <!--
-        - #RESUME
-        -->
-            <article class="resume active" data-page="resumen">
+            <!-- Sección Resumen -->
+            <article class="resumen" data-page="resumen">
                 <header>
-                    <h2 class="h2 article-title">Resumen</h2>
+                    <h2 class="h2 titulo-articulo">Resumen</h2>
                 </header>
-
-                <section class="timeline">
-                    <div class="title-wrapper">
-                        <div class="icon-box-2">
-                            <ion-icon class="book" name="book-outline"></ion-icon>
+                <section class="linea-del-tiempo">
+                    <div class="caja-titulo">
+                        <div class="caja-icono-2">
+                            <ion-icon class="libro" name="documents-outline"></ion-icon>
                         </div>
-                        <h3 class="education-sub">Educación</h3>
+                        <h3 class="subtitulo-educacion">Experiencia</h3>
                     </div>
-                    <ol class="timeline-list-1">
-                        <li class="timeline-item-1">
-                            <h4 class="h4 timeline-item-title-1">Pontificia Universidad Javeriana</h4>
-                            <h3 class="h4 timeline-item-title-sub">Cursos Mas Importantes</h3>
-                            <ol class="timeline-list-2">
-                                <li class="timeline-item-2">
-                                    <h4 class="h4 timeline-item-title-2">Estructura de Datos</h4>
-                                    <span>Enero 2021 - Junio 2021</span>
-                                    <p class="timeline-text">
-                                        Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                                        quas molestias
-                                        exceptur.
+                    <ol class="lista-linea-del-tiempo-1">
+                        <li class="item-linea-del-tiempo-1">
+                            <h4 class="h4 titulo-item-linea-del-tiempo-1">Auxiliar de Contaduria</h4>
+                            <ol class="lista-linea-del-tiempo-2">
+                                <li class="item-linea-del-tiempo-2">
+                                    <h4 class="h4 titulo-item-linea-del-tiempo-2">Formatos de Devolucion IVA</h4>
+                                    <span>Noviembre 2024 - Marzo 2025</span>
+                                    <p class="texto-linea-del-tiempo">
+                                        Como asistente informal de contaduría, he trabajado
+                                        en la creación de formatos para devoluciones de IVA ante la DIAN, manejando
+                                        datos sensibles y asegurando precisión en los procesos. Esta experiencia
+                                        me ha interesado en la automatización de tareas contables, como generar 
+                                        documentos y desarrollar herramientas digitales para hacer todo más eficiente y reducir errores.
                                     </p>
                                 </li>
-                                <li class="timeline-item-2">
-                                    <h4 class="h4 timeline-item-title-2">Analisis de Algoritmos</h4>
-                                    <span>Enero 2021 - Junio 2021</span>
-                                    <p class="timeline-text">
-                                        Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                                        quas molestias
-                                        exceptur.
+                            </ol>
+                            <h4 class="h4 titulo-item-linea-del-tiempo-1">Hackaton 2024 Colombia-Costa Rica</h4>
+                            <ol class="lista-linea-del-tiempo-2">
+                                <li class="item-linea-del-tiempo-2">
+                                    <h4 class="h4 titulo-item-linea-del-tiempo-2">Soluciones digitales para el desarrollo del turismo 4.0</h4>
+                                    <span>Enero 2024 - Abril 2025</span>
+                                    <p class="texto-linea-del-tiempo">
+                                        Participé como desarrollador en un equipo de 5 personas para crear un producto mínimo viable que 
+                                        buscaba integrar la tecnología en el turismo costarricense. Usamos metodología SCRUM y trabajamos
+                                        de la mano con el equipo de diseño para desarrollar y desplegar una aplicación pública con Angular 
+                                        y TypeScript. La app incluía realidad aumentada con Spark AR Studio, ofreciendo una experiencia 
+                                        inmersiva para visitar museos y atracciones turísticas, permitiendo a los usuarios comprar boletos 
+                                        sin filas y disfrutar de una experiencia más ágil y organizada.
                                     </p>
                                 </li>
-                                <li class="timeline-item-2">
-                                    <h4 class="h4 timeline-item-title-2">Desarrollo Movil</h4>
-                                    <span>Enero 2021 - Junio 2021</span>
-                                    <p class="timeline-text">
-                                        Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                                        quas molestias
-                                        exceptur.
-                                    </p>
-                                </li>
-                                <li class="timeline-item-2">
-                                    <h4 class="h4 timeline-item-title-2">Base de datos</h4>
-                                    <span>Enero 2021 - Junio 2021</span>
-                                    <p class="timeline-text">
-                                        Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                                        quas molestias
-                                        exceptur.
-                                    </p>
-                                </li>
-                                <li class="timeline-item-2">
-                                    <h4 class="h4 timeline-item-title-2">Analisis & Diseño de Software</h4>
-                                    <span>Enero 2021 - Junio 2021</span>
-                                    <p class="timeline-text">
-                                        Nemo enims ipsam voluptatem, blanditiis praesentium voluptum delenit atque corrupti, quos dolores et
-                                        quas molestias
-                                        exceptur.
-                                    </p>
-                                </li>
-                                
                             </ol>
                         </li>
-                        <li class="timeline-item-1">
-                            <h4 class="h4 timeline-item-title-1">Certificacion de Google Cloud</h4>
+                    </ol>
+                    <div class="caja-titulo">
+                        <div class="caja-icono-2">
+                            <ion-icon class="libro" name="book-outline"></ion-icon>
+                        </div>
+                        <h3 class="subtitulo-educacion">Educación</h3>
+                    </div>
+                    <ol class="lista-linea-del-tiempo-1">
+                        <li class="item-linea-del-tiempo-1">
+                            <h4 class="h4 titulo-item-linea-del-tiempo-1">Pontificia Universidad Javeriana</h4>
+                            <h3 class="h4 subtitulo-item-linea-del-tiempo">Cursos Más Importantes</h3>
+                            <ol class="lista-linea-del-tiempo-2">
+                                <li class="item-linea-del-tiempo-2">
+                                    <h4 class="h4 titulo-item-linea-del-tiempo-2">Estructura de Datos</h4>
+                                    <span>Julio 2023 - Noviembre 2023</span>
+                                    <p class="texto-linea-del-tiempo">
+                                        Se Analizaron estructuras como colas, pilas, árboles y grafos, 
+                                        junto con sus métodos de creación e iteración y applicaciones en problemas reales. 
+                                        Se implementó el algoritmo de compresión de Huffman para la optimización de datos.
+                                    </p>
+                                </li>
+                                <li class="item-linea-del-tiempo-2">
+                                    <h4 class="h4 titulo-item-linea-del-tiempo-2">Análisis de Algoritmos</h4>
+                                    <span>Enero 2024 - Junio 2024</span>
+                                    <p class="texto-linea-del-tiempo">
+                                        Se diseñaron algoritmos para la resolución de problemas, optimización de rutas y 
+                                        ordenamiento, aplicando enfoques Bottom-up y Top-down. Además, se analizó la complejidad 
+                                        temporal con Big-O y el Teorema Maestro, desarrollando algoritmos adaptativos en juegos
+                                        como Minesweeper y Masyu automaticamente.
+                                    </p>
+                                </li>
+                                <li class="item-linea-del-tiempo-2">
+                                    <h4 class="h4 titulo-item-linea-del-tiempo-2">Desarrollo Móvil</h4>
+                                    <span>Enero 2024 - Junio 2024</span>
+                                    <p class="texto-linea-del-tiempo">
+                                        Se crearon aplicaciones en Android Studio con integración de mapas, sensores y bases
+                                        de datos en la nube. También se trabajó con Flutter para desarrollo multiplataforma y
+                                        conexión con Google Cloud Firestore para el almacenamiento de datos.
+                                    </p>
+                                </li>
+                                <li class="item-linea-del-tiempo-2">
+                                    <h4 class="h4 titulo-item-linea-del-tiempo-2">Base de Datos</h4>
+                                    <span>Enero 2023 - Junio 2023</span>
+                                    <p class="texto-linea-del-tiempo">
+                                        Se utilizo Oracle Database, incluyendo diagramas entidad-relación, normalización
+                                        y consultas SQL avanzadas. También se exploró MongoDB para bases de datos NoSQL y 
+                                        su manejo eficiente.
+                                    </p>
+                                </li>
+                                <li class="item-linea-del-tiempo-2">
+                                    <h4 class="h4 titulo-item-linea-del-tiempo-2">Análisis & Diseño de Software</h4>
+                                    <span>Enero 2023 - Junio 2023</span>
+                                    <p class="texto-linea-del-tiempo">
+                                        Se estudiaron patrones de diseño como Factory, Builder y Mediator, junto con principios
+                                        de Programación Orientada a Objetos (POO) para la implementación de soluciones modulares
+                                        y escalables.
+                                    </p>
+                                </li>
+                                <li class="item-linea-del-tiempo-2">
+                                    <h4 class="h4 titulo-item-linea-del-tiempo-2">Inteligencia Artificial</h4>
+                                    <span>Julio 2024 - Noviembre 2024</span>
+                                    <p class="texto-linea-del-tiempo">
+                                        Se abordaron fundamentos de IA, incluyendo restricciones, sistemas expertos y métodos
+                                        probabilísticos. Además, se exploró el lenguaje Prolog y Python para el desarrollo 
+                                        de soluciones basadas en lógica.
+                                    </p>
+                                </li>
+                                <li class="item-linea-del-tiempo-2">
+                                    <h4 class="h4 titulo-item-linea-del-tiempo-2">Desarrollo Web</h4>
+                                    <span>Julio 2024 - Noviembre 2024</span>
+                                    <p class="texto-linea-del-tiempo">
+                                        Se revisaron conceptos desde la base del desarrollo web hasta la integración con redes.
+                                        Se trabajó con Angular, Spring Boot y bases de datos H2, aplicando CRUD, autenticación, 
+                                        patrones de diseño y pruebas con Mock, para el despligue de la misma.
+                                    </p>
+                                </li>
+                                <li class="item-linea-del-tiempo-2">
+                                    <h4 class="h4 titulo-item-linea-del-tiempo-2">Sistemas Distribihidos</h4>
+                                    <span>Julio 2024 - Noviembre 2024</span>
+                                    <p class="texto-linea-del-tiempo">
+                                        Se estudiaron temas como consistencia y replicación, tolerancia a fallos y transacciones 
+                                        distribuidas. Se exploraron relojes de Lamport y métodos de sincronización entre bases de 
+                                        datos, además de la selección de administradores en redes distribuidas.
+                                    </p>
+                                </li>
+                            </ol>
                         </li>
                     </ol>
                 </section>
-                <section class="skills">
-                    <h3 class="h3 service-title">Mis Habilidades</h3>
-                    <ul class="skills-list content-card">
+
+                <!-- Habilidades -->
+                <section class="habilidades">
+                    <h3 class="h3 titulo-servicio">Mis Habilidades</h3>
+                    <ul class="lista-habilidades tarjeta-contenido">
                         <li>
-                            <div class="title-wrapper-2">
-                                <div class="title-item">Web Desing</div>
-                                <data value="80">80%</data>
+                            <div class="caja-titulo-2">
+                                <div class="item-titulo">Diseño Web</div>
+                                <data value="70">50%</data>
                             </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                            <div class="fondo-progreso-habilidad">
+                                <div class="relleno-progreso-habilidad" style="width: 50%;"></div>
                             </div>
                         </li>
                         <li>
-                            <div class="title-wrapper-2">
-                                <div class="title-item">Web Desing</div>
-                                <data value="80">80%</data>
+                            <div class="caja-titulo-2">
+                                <div class="item-titulo">Analisis Y Diseño De Algoritmos</div>
+                                <data value="70">70%</data>
                             </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 80%;"></div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="title-wrapper-2">
-                                <div class="title-item">Web Desing</div>
-                                <data value="80">80%</data>
-                            </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                            <div class="fondo-progreso-habilidad">
+                                <div class="relleno-progreso-habilidad" style="width: 70%;"></div>
                             </div>
                         </li>
                         <li>
-                            <div class="title-wrapper-2">
-                                <div class="title-item">Web Desing</div>
+                            <div class="caja-titulo-2">
+                                <div class="item-titulo">Desarrollo Movil</div>
+                                <data value="60">60%</data>
+                            </div>
+                            <div class="fondo-progreso-habilidad">
+                                <div class="relleno-progreso-habilidad" style="width: 60%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="caja-titulo-2">
+                                <div class="item-titulo">Diseño Web</div>
                                 <data value="80">80%</data>
                             </div>
-                            <div class="skill-progress-bg">
-                                <div class="skill-progress-fill" style="width: 80%;"></div>
+                            <div class="fondo-progreso-habilidad">
+                                <div class="relleno-progreso-habilidad" style="width: 80%;"></div>
                             </div>
                         </li>
                     </ul>
                 </section>
             </article>
-        
-            <article class="portfolio" data-page="portafolio">
+
+            <!-- Sección Portafolio -->
+            <article class="portafolio" data-page="portafolio">
                 <header>
-                    <h2 class="h2 article-title">Portafolio</h2>
+                    <h2 class="h2 titulo-articulo">Portafolio</h2>
                 </header>
             </article>
         </div>
     </main>
-    <!--
-    - custom js link
-    -->
+
     <script src="./assets/index.js"></script>
-    
-    </body>
-    
-    <!--
-    - ionicon link
-    -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+</body>
 </html>
